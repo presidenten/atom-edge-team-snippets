@@ -8,7 +8,7 @@
     "jest"
   ],
   "version": "0.1.1",
-  "repository": "https://github.com/presidenten/atom-edge-team-snippets.git",
+  "repository": "https://github.com/presidenten/atom-edge-team-snippets",
   "license": "MIT",
   "author": {
     "name": "Johan Hernefeldt"
