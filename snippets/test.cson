@@ -3,7 +3,7 @@
     'prefix': 'newtest'
     'body': """
       import { createLogger } from '@edge/log';
-      import $1 from './$1-substore.js';
+      import $2 from './$1-substore.js';
 
       const log = createLogger('$1'); // eslint-disable-line
 
