@@ -7,7 +7,7 @@
     "vuex+",
     "jest"
   ],
-  "version": "0.0.1",
+  "version": "0.1.0",
   "repository": "https://github.com/presidenten/atom-edge-team-snippets.git",
   "license": "MIT",
   "author": {
@@ -18,7 +18,6 @@
       "edge-team-snippets:toggle"
     ]
   },
-  "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
