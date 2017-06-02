@@ -7,8 +7,6 @@
 
       const log = createLogger('$1'); // eslint-disable-line
 
-      import { createLogger } from '@edge/log';
-
       const { getters, mutations, actions } = $1;
 
       describe('Components: $1', () => {
