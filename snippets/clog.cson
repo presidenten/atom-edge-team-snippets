@@ -1,0 +1,21 @@
+'.text.html.vue, .source.js':
+
+  'Console.warn':
+    'prefix': 'cwarn'
+    'body': 'console.warn(\'$1\', $1$0); // eslint-disable-line'
+
+  'Console.info':
+    'prefix': 'cinfo'
+    'body': 'console.info(\'$1\', $1$0); // eslint-disable-line'
+
+  'Console.log':
+    'prefix': 'clog'
+    'body': 'console.log(\'$1\', $1$0); // eslint-disable-line'
+
+  'Console.error':
+    'prefix': 'cerror'
+    'body': 'console.error(\'$1\', $1$0); // eslint-disable-line'
+
+  'Log one more var':
+    'prefix': 'more'
+    'body': '\'$1\', $1,$0'

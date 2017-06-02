@@ -1,0 +1,42 @@
+'.text.html.vue':
+  'New vue file template':
+    'prefix': 'newvue'
+    'body': """
+      <script>
+        // Libraries
+        import { map } from 'vuex+';
+        import { createLogger } from '@edge/log';
+        import localeSvc from '@edge/locale'; // eslint-disable-line
+        // Internal
+        // import ...
+
+        const log = createLogger('$1'); // eslint-disable-line
+
+        export default {
+          name: '$1',
+          props: [],
+          components: {},
+          computed: {
+            ...map.getters({
+            }),
+          },
+          methods: {
+            ...map.actions({
+            }),
+          },
+          mounted() {},
+        };
+      </script>
+
+      <template>
+        <div class="$1">
+          $0Hello world!
+        </div>
+      </template>
+
+      <style scoped>
+        .$1 {
+
+        }
+      </style>
+    """

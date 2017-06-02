@@ -1,0 +1,13 @@
+'.text.html.vue, .source.js':
+
+  'Eslint skip line':
+    'prefix': 'lintskipline'
+    'body': '// eslint-disable-line'
+
+  'Eslint skip next line':
+    'prefix': 'lintskiplinenext'
+    'body': '// eslint-disable-next-line'
+
+  'Eslint skip file':
+    'prefix': 'lintskipfile'
+    'body': '/* eslint-disable */'

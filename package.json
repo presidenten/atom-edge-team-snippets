@@ -1,0 +1,28 @@
+{
+  "name": "atom-edge-team-snippets",
+  "description": "Snippets for Edge Team",
+  "keywords": [
+    "vue",
+    "vuex",
+    "vuex+",
+    "jest"
+  ],
+  "version": "0.0.1",
+  "repository": "https://github.com/presidenten/atom-edge-team-snippets.git",
+  "license": "MIT",
+  "author": {
+    "name": "Johan Hernefeldt"
+  },
+  "activationCommands": {
+    "atom-text-editor": [
+      "edge-team-snippets:toggle"
+    ]
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {}
+}
+
+new

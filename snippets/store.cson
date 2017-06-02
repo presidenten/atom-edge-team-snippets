@@ -1,0 +1,41 @@
+'.source.js':
+  'New store file template':
+    'prefix': 'newstore'
+    'body': """
+      // Libraries
+      import { store } from 'vuex+';
+      import { createLogger } from '@edge/log';
+      import localeSvc from '@edge/locale'; // eslint-disable-line
+      // Internal
+      // import ...
+
+      const log = createLogger('$1'); // eslint-disable-line
+
+      const initialState = {
+        $0xyz: 0,
+      };
+
+      const getters = {
+        xyz: state => state.xyz,
+      };
+
+      const actions = {
+        abc(context, data) {
+          context.commit('asd', data);
+        },
+      };
+
+      const mutations = {
+        asd(state, amount) {
+          state.xyz = data;
+        },
+      };
+
+
+      export default store({
+        state: initialState,
+        getters,
+        actions,
+        mutations,
+      });
+    """

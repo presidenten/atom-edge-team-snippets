@@ -1,0 +1,50 @@
+'.source.js':
+  'New store test file template':
+    'prefix': 'newtest'
+    'body': """
+      import { createLogger } from '@edge/log';
+      import $1 from './$1-substore.js';
+
+      const log = createLogger('$1'); // eslint-disable-line
+
+      import { createLogger } from '@edge/log';
+
+      const { getters, mutations, actions } = $1;
+
+      describe('Components: $1', () => {
+        let state;
+        let context;
+        beforeEach(() => {
+          state = {
+            items: [],
+          };
+          context = {
+            state,
+            dispatch: jest.fn(),
+            commit: jest.fn(),
+          };
+        });
+
+        describe('Getters', () => {
+          it('$0xyz should return something', () => {
+            expect(getters.xyz(state)).toEqual(state.xyz);
+          });
+        });
+
+        describe('Actions', () => {
+          it('abc should commit mutation', () => {
+            actions.abc(context);
+
+            expect(context.commit).toBeCalledWith('asd');
+          });
+        });
+
+        describe('Mutations', () => {
+          it('asd should do something', () => {
+            mutations.asd(state);
+
+            expect(state.xyz).toEqual('something');
+          });
+        });
+      });
+    """

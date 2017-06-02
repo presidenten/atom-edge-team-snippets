@@ -1,0 +1,45 @@
+'.text.html.vue':
+  'New top store vue - file template':
+    'prefix': 'newvuetop'
+    'body': """
+      <script>
+        // Libraries
+        import { map, addStore } from 'vuex+';
+        import { createLogger } from '@edge/log';
+        import localeSvc from '@edge/locale'; // eslint-disable-line
+        // Internal
+        import $2 from './$1-store.js';
+
+        const log = createLogger('$1'); // eslint-disable-line
+        const { mixin, api } = addStore('$1-store');
+
+        export default {
+          name: '$1',
+          mixins: [mixin],
+          props: [],
+          components: {},
+          computed: {
+            ...map.getters({
+            }),
+          },
+          methods: {
+            ...map.actions({
+            }),
+          },
+          mounted() {},
+        };
+      </script>
+
+      <template>
+        <div class="$1">
+          $0Hello world!
+        </div>
+      </template>
+
+      <style scoped>
+        .$1 {
+
+        }
+      </style>
+
+    """

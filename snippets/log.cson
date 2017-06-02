@@ -1,0 +1,21 @@
+'.text.html.vue, .source.js':
+
+  'log.trace':
+    'prefix': 'trace'
+    'body': 'log.trace(\'$1\', $1$0);'
+
+  'log.info':
+    'prefix': 'info'
+    'body': 'log.info(\'$1\', $1$0);'
+
+  'log.debug':
+    'prefix': 'debug'
+    'body': 'log.debug(\'$1\', $1$0);'
+
+  'log.warn':
+    'prefix': 'warn'
+    'body': 'log.warn(\'$1\', $1$0);'
+
+  'log.error':
+    'prefix': 'error'
+    'body': 'log.error(\'$1\', $1$0);'
