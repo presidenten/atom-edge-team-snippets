@@ -46,3 +46,38 @@
         });
       });
     """
+
+  'New beforeEach':
+    'prefix': 'beforeEach'
+    'body': """
+      beforeEach(() => {
+        $0
+      });
+    """
+
+
+  'New afterEach':
+    'prefix': 'afterEach'
+    'body': """
+      afterEach(() => {
+        $0
+      });
+    """
+
+  'New describe':
+    'prefix': 'describe'
+    'body': """
+      describe('$1', () => {
+        it('$2', () => {
+          expect($0true).toEqual(true);
+        });
+      });
+    """
+
+  'New test case':
+    'prefix': 'it'
+    'body': """
+      it('$2', () => {
+        expect($0true).toEqual(true);
+      });
+    """
