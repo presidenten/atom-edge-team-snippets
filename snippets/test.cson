@@ -7,7 +7,7 @@
 
       const log = createLogger('$1'); // eslint-disable-line
 
-      const { getters, mutations, actions } = $1;
+      const { getters, mutations, actions } = $2;
 
       describe('Components: $1', () => {
         let state;
